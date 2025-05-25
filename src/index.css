@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+
+    --color-bodyBgColor:#000000;
+    --color-cardBgColor:rgba(0,0,0,0.25);
+    --color-cardBghoverColor:rgba(0,0,0,0.40);
+    --color-primaryColor:#99a1af;
+    --color-designColor:#ff014f;
+
+    --shadow-black:5px 5px 10px rgba(0,0,0,0.70) ;
+    --shadow-shadowOne:5px 5px 10px #8a8a8a66,-5px -5px 10px #8a8a8a66;
+    --shadow-dummy:2px 2px 3px #1c1e22,-2px -2px 3px #262a2e;
+    --shadow-normal:2px 2px 3px #1c1e22,-2px -2px 3px #262a2e;
+    --shadow-glow:2px 2px 3px #99a1af,-2px -2px 3px #99a1af;
+    --shadow-active:2px 2px 4px #ff014f,-2px -2px 4px #ff014f;
+
+    --font-primary:"Inter", sans-serif;
+    --font-heading:"Playfair", serif;
+
+    /* --font-merienda:"Merienda", cursive;    
+    --font-poetsen:"Poetsen One", sans-serif;
+    --font-inter:"Inter", sans-serif;
+    --font-roboto:"Roboto", sans-serif;
+    --font-lato:"Lato", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-pacifico:"Pacifico", cursive;
+    --font-caveat:"Caveat", cursive;
+    --font-satisfy:"Satisfy", cursive;
+    --font-seriftext:"DM Serif Text", serif;
+    --font-kalnia:"Kalnia", serif;
+    --font-niconne:"Niconne", cursive;
+    --font-playfair:"Playfair", serif;
+    --shadow-original:10px 10px 10px #1c1e22,-5px -5px 10px #262a2e;
+    --shadow-shadowOne:5px 5px 10px rgba(0,0,0,0.70); */    
+    
+    --breakpoint-xs:480px;
+    --animate-trans:trans 0.4s linear;
+    
+    @keyframes trans {
+        0%{transform:translateX(-100%);}
+        25%{transform:translateX(-75%);}
+        50%{transform:translateX(-50%);}
+        75%{transform:translateX(-25%);}
+        100%{transform:translateX(0%);}
+    }
+
+    @keyframes spin {
+        100%{transform:rotate(360deg);}
+    }
+}
+@layer components{
+    .icon{
+        @apply w-10 h-10 bg-cardBgColor text-primaryColor text-lg rounded-full flex 
+        items-center justify-center hover:bg-cardBghoverColor 
+        transition-all hover:text-designColor duration-500 cursor-pointer
+        hover:border-designColor hover:border border border-primaryColor
+    }
+    .inputbox{
+        @apply w-full lg:h-12 h-10 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-gray-300 px-4 
+        active:outline-none focus-visible:outline-designColor outline-transparent outline-[2px] focus-visible:border-b-transparent transition-all duration-150
+    }
+}
+@layer base{
+    html{
+        @apply scroll-smooth;
+        scroll-padding-top: 5rem;
+    }
+}
+
+.bannerLogo::before,
+.bannerLogo::after{
+    content:"";
+    position: absolute; 
+    width: 50rem;
+    height: 50rem;
+    background: conic-gradient(transparent,transparent,transparent,#ff014f);
+    transform: rotate(0deg);
+    animation: spin 8s linear infinite;
+}
+.bannerLogo::after{
+    animation-delay: -4s;
+}
