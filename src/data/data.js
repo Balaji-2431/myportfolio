@@ -139,7 +139,7 @@ export const projectCardDetails=[
       id:1003,
       title:"spicy hunt",
       img:"public/images/Projects/project-1.webp",
-      discription:"Spicy Hunt is the first website I built-a responsive restaurant site that helped me learn basics of web design and kickstart my frontend developer journey.",
+      discription:"Spicy Hunt is the first website, I built-a responsive restaurant site that helped me learn basics of web design and kickstart my frontend developer journey.",
       language:"HTML, CSS",
       gitLint:"https://github.com/Balaji-2431/spicyHunt",
       liveLink:"https://spicy-hunt.vercel.app"
