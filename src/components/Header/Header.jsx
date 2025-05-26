@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {FiMenu,FiX} from 'react-icons/fi'
 import { navItems } from '../../data/data.js';
-import logo from '../../assets/logoImage.webP'
+import logo from '../../assets/logoImage.webp'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

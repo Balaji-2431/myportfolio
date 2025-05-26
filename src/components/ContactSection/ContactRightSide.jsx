@@ -1,5 +1,5 @@
 import React from 'react'
-import contactImg from '../../assets/contactImg.webP'
+import contactImg from '../../assets/contactImg.webp'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa'
 import ScrollFade from '../Animation/ScrollFade'
 import LazyLoading from '../Lazyloding/LazyLoading'

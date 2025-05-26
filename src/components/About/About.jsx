@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../../assets/aboutImg.webP'
+import aboutImg from '../../assets/aboutImg.webp'
 import LazyLoading from '../Lazyloding/LazyLoading'
 import ScrollFade from '../Animation/ScrollFade'
 import SectionTitle from '../SectionTitle/SectionTitle'

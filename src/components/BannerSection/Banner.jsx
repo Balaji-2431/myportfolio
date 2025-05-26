@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImg from '../../assets/logoImage.webP'
+import logoImg from '../../assets/logoImage.webp'
 import Typewriter from 'typewriter-effect'
 import {FaGithub,FaLinkedin,FaEnvelope,FaDownload} from 'react-icons/fa'
 import ScrollFade from '../Animation/ScrollFade'
