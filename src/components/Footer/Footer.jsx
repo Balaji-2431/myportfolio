@@ -1,4 +1,4 @@
-import logo from '../../assets/logoImage.webP'
+import logo from '../../assets/logoImage.webp'
 import {FaGithub,FaLinkedin,FaEnvelope,FaInstagram} from 'react-icons/fa'
 import { navItems } from '../../data/data.js';
 
