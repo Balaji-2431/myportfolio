@@ -7,7 +7,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-bodyBgColor border-b-2 border-b-primaryColor h-[74px]">
+    <header className="h-[74px] fixed top-0 z-50 w-full bg-bodyBgColor border-b-2 border-b-primaryColor ">
       <nav aria-label="Main navigation"className="p-3 pl-6 md:pl-0 w-screen filter backdrop-blur-xl flex items-center md:justify-between">
         <button aria-label="Open menu" className="cursor-pointer md:hidden fixed text-2xl left-4 text-primaryColor"
           onClick={() => setMenuOpen(true)}><FiMenu/></button>

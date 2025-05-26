@@ -2,7 +2,7 @@ import React, { useState,useEffect,useRef } from 'react'
 
 const LazyLoading = ({src,alt,className}) => {
 
-    const placeholderImg="/images/placeholder.webP"
+    const placeholderImg="/images/placeholder.webp"
     const [loaded,setLoaded]=useState(false)
     const imgRef=useRef(null);
     const[isVisible,setIsVisible]=useState(false);
