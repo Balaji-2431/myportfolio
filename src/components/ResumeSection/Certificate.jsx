@@ -7,7 +7,7 @@ const Certificate = () => {
   const data=[
     {
       id:24,
-      certificateImage:"public/images/certificates/cssBasic.webp",
+      certificateImage:"/images/certificates/cssBasic.webp",
       certificateHeading:"CSS Basic",
       certificateCompany:"HackerRank",
       certificateDescription: "Certificated for understanding core CSS concepts like selectors, layout, and styling fundamentals.",
@@ -15,7 +15,7 @@ const Certificate = () => {
     },
     {
       id:25,
-      certificateImage:"public/images/certificates/webDeveloper.webp",
+      certificateImage:"/images/certificates/webDeveloper.webp",
       certificateHeading:"Web Developer",
       certificateCompany:"Eduonix",
       certificateDescription: "Completed a comprehensive  course covering HTML, CSS, JavaScript, and essential web development skills through hands-on projects.",
