@@ -29,7 +29,6 @@ const LazyLoading = ({src,alt,className}) => {
       className={`relative ${className}`}
       ref={imgRef}
       style={{
-            minHeight:'200px',
             backgroundImage:!loaded?`url(${placeholderImg})`:'none',
             backgroundSize:'cover',
             backgroundPosition:'center',

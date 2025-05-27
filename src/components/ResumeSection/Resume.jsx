@@ -1,17 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { resumedata } from '../../data/data'
 import ScrollFade from '../Animation/ScrollFade';
-import useWindowSize from '../useWindowSize'
 import SectionTitle from '../SectionTitle/SectionTitle';
+
 const Resume = () => {
-  const { width } = useWindowSize();
   const [visbleSection,setVisbleSection] = useState(resumedata[0].component);
   const [active,setActive] = useState(1);
   const [activeindex,setActiveIndex] = useState(0);
   const [trans,setTrans] = useState(false);
+  const [handleClick,sethandleClick] = useState(false);
   const sectionRefs=useRef([])
 
   function handleclick(item,index) {
+    sethandleClick(true)
     setActiveIndex(index)
     setActive(item.id)
     setTrans(true)
@@ -20,13 +21,17 @@ const Resume = () => {
       setTrans(false)
     },300)
   }
+
   useEffect(()=>{
+    if(!handleClick){
+      return;
+    }
     if(activeindex!==null && window.innerWidth<768){
       setTimeout(()=>{
-        sectionRefs.current[activeindex].scrollIntoView({behavior:"smooth",block:"start"});
+        sectionRefs.current[activeindex]?.scrollIntoView({behavior:"smooth",block:"start"});
       },100);
     }
-  },[activeindex]);
+  },[activeindex,handleClick]);
 
   return (
     <section id='resume' className=' pb-10'>
