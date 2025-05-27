@@ -11,7 +11,7 @@ const ScrollFade = ({children,direction}) => {
             case "up":
                 return "-translate-y-32 opacity-0"
             case "down":
-                return "translate-y-32 opacity-0"
+                return "translate-y-44 opacity-0"
             default:
                 break;
         }
