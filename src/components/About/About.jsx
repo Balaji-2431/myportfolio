@@ -16,9 +16,9 @@ const About = () => {
             <div className="flex justify-center items-center md:flex-row flex-col lg:gap-10" >
                 <div className="lg:flex-[40%] flex-[45%]  ">
                     <ScrollFade direction={"left"}>
-                    <div className="overflow-hidden flex md:h-auto h-[400px] w-full justify-center items-center">
+                    <div className="overflow-hidden flex h-[288px] w-[300px] md:h-auto xs:h-[400px] xs:w-full justify-center items-center">
                         <LazyLoading 
-                            className='xs:h-full xs:w-auto h-[288px] w-[300px]'
+                            className='h-full w-auto'
                             src={aboutImg}
                             alt="About image"
                         >
