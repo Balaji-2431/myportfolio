@@ -18,7 +18,7 @@ const About = () => {
                     <ScrollFade direction={"left"}>
                     <div className="overflow-hidden flex md:h-auto h-[400px] w-full justify-center items-center">
                         <LazyLoading 
-                            className='h-full  w-auto object-cover'
+                            className='h-full w-[400px]'
                             src={aboutImg}
                             alt="About image"
                         >
