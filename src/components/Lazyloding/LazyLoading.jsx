@@ -11,7 +11,7 @@ const LazyLoading = ({src,alt,className}) => {
             if(entry.isIntersecting){
                 setIsVisible(true)
             }
-        },{threshold: 0.1});
+        },{threshold: 0.1,rootMargin:'50px 0px'});
         const node = imgRef.current;
         
         if(node){
@@ -29,6 +29,7 @@ const LazyLoading = ({src,alt,className}) => {
       className={`relative ${className}`}
       ref={imgRef}
       style={{
+            minHeight:'200px',
             backgroundImage:!loaded?`url(${placeholderImg})`:'none',
             backgroundSize:'cover',
             backgroundPosition:'center',
