@@ -12,7 +12,7 @@ const Banner = () => {
     <>
         <section id='home' 
             className=" min-h-[calc(100vh)] lg:w-[90vw] 2xl:w-[60vw] 2xl:h-auto 2xl:pt-40 w-[95vw] mx-auto 
-                    pt-[78px] relative z-10 
+                    pt-[74px] relative z-10 
                     flex sm:flex-row flex-col justify-center items-center lg:gap-10 gap-2 sm:gap-4">
 
             <div className="sm:order-1 order-2">
@@ -35,12 +35,12 @@ const Banner = () => {
                         </h3>
                         <p className='max-w-96 mx-2 md:max-w-lg indent-5 sm:indent-0 font-primary text-justify text-white'>I build real-world projects with React and modern web tools. I'm passionate about clean design and fast performance.</p>
                         <div className="flex sm:gap-5 gap-3 sm:mt-2">
-                            <a download href='./assets/background.jpg' className="font-primary bg-designColor  text-primaryColor hover:bg-primaryColor hover:text-black transition-all duration-500 md:flex justify-center items-center gap-2 hidden py-2 px-4 my-1 rounded-full font-bold ">Download CV<FaDownload/></a> 
+                            <a download href='./assets/logoImage.webp' className="font-primary bg-designColor  text-primaryColor hover:bg-primaryColor hover:text-black transition-all duration-500 md:flex justify-center items-center gap-2 hidden py-2 px-4 my-1 rounded-full font-bold ">Download CV<FaDownload/></a> 
                             <a href="https://github.com/Balaji-2431" target='_blank' ><span className='icon hover:-translate-y-2 '><FaGithub/></span></a>  
                             <a href="https://www.linkedin.com/in/balaji-b-b7ab2629b" target='_blank' ><span className='icon hover:-translate-y-2 '><FaLinkedin/></span></a>  
                             <a href="mailto:tbalaji2411@gmail.com"  ><span className='icon hover:-translate-y-2 '><FaEnvelope/></span></a>  
                         </div>
-                        <a download href='./assets/background.jpg' className="font-primary bg-designColor text-primaryColor mt-1 hover:bg-primaryColor hover:text-black transition-all duration-500 md:hidden py-2 px-4  rounded-full  font-bold flex gap-2 justify-center items-center">Download CV<FaDownload/> </a>
+                        <a download href='./assets/logoImage.webp' className="font-primary bg-designColor text-primaryColor mt-1 hover:bg-primaryColor hover:text-black transition-all duration-500 md:hidden py-2 px-4  rounded-full  font-bold flex gap-2 justify-center items-center">Download CV<FaDownload/> </a>
                     </div>
                 </ScrollFade>
             </div>
