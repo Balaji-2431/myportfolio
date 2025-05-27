@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <>
         <section id='home' 
-            className=" min-h-[calc(100vh)] lg:w-[90vw] 2xl:w-[60vw] 2xl:h-auto 2xl:pt-40 w-[95vw] mx-auto 
+            className=" min-h-screen lg:w-[90vw] 2xl:w-[60vw] 2xl:h-auto 2xl:pt-40 w-[95vw] mx-auto 
                     pt-[74px] relative z-10 
                     flex sm:flex-row flex-col justify-center items-center lg:gap-10 gap-2 sm:gap-4">
 
