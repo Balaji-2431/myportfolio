@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../../assets/aboutImg.webp'
+import aboutImg from '../../assets/aboutImage.webp'
 import LazyLoading from '../Lazyloding/LazyLoading'
 import ScrollFade from '../Animation/ScrollFade'
 import SectionTitle from '../SectionTitle/SectionTitle'
@@ -18,7 +18,7 @@ const About = () => {
                     <ScrollFade direction={"left"}>
                     <div className="overflow-hidden flex md:h-auto h-[400px] w-full justify-center items-center">
                         <LazyLoading 
-                            className='h-full w-[400px]'
+                            className='xs:h-full xs:w-auto w-[300px] h-[288px]'
                             src={aboutImg}
                             alt="About image"
                         >
